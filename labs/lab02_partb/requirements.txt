@@ -1,0 +1,11 @@
+ipykernel==6.29.4
+# azure-cli
+PyPDF2
+numpy==1.26.4
+faiss-cpu==1.7.4
+openai
+jinja2
+python-dotenv
+tiktoken
+promptflow[azure]
+promptflow-tools

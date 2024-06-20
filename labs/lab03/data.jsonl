@@ -1,0 +1,3 @@
+{"question":"How about London next week?","chat_history":[],"ground_truth":{"location":"London","temperature":"72","format":"celsius","forecast":["sunny","windy"]}}
+{"question":"What will the weather be in St Louis, Missouri tomorrow?","chat_history":[],"ground_truth":{"location":"St Louis","temperature":"72","format":"celsius","forecast":["sunny","windy"]}}
+{"question":"What is the capital of Japan?","chat_history":[],"ground_truth":"Tokyo"}

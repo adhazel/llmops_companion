@@ -1,0 +1,21 @@
+{
+    "chat_history": [
+      {
+        "inputs": {
+          "chat_input": "Hi"
+        },
+        "outputs": {
+          "chat_output": "Hello! How can I assist you today?"
+        }
+      },
+      {
+        "inputs": {
+          "chat_input": "What is the temperature in Beijing next week?"
+        },
+        "outputs": {
+          "chat_output": "{'location': 'Beijing', 'temperature': '72', 'format': 'celsius', 'forecast': ['sunny', 'windy']}"
+        }
+      }
+    ],
+    "question": "How about London next week?"
+  }

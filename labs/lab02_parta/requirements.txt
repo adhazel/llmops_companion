@@ -1,0 +1,6 @@
+ipykernel==6.29.4
+# azure-cli
+promptflow
+promptflow-tools
+python-dotenv
+bs4

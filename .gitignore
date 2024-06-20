@@ -1,0 +1,11 @@
+**/venv**
+labs/lab02_parta/dagflow_classification
+venv2a
+labs/lab02_parta/update_open_ai_connection_connection.yaml
+test.py
+.env
+**/__pycache**
+labs/lab02_partb/dagflow_chatondata/flow.dag.yaml
+**/.promptflow**
+venv2b
+labs/lab02_partb/update_open_ai_connection_connection.yaml

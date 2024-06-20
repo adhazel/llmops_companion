@@ -1,0 +1,42 @@
+---
+name: restate question
+description: restate the question with history
+model:
+  api: chat
+  configuration:
+      connection: open_ai_connection
+      type: azure_openai
+      azure_deployment: ${env:CHAT_MODEL_DEPLOYMENT_NAME}
+  parameters:
+    temperature: 0.2
+    max_tokens: 500
+    top_p: 1.0
+    response_format:
+      type: text
+
+inputs: 
+  question:
+    type: string
+  chat_history:
+    type: list
+    default: []
+outputs:
+  restated_question:
+    type: string
+
+---
+system: 
+* Given the following conversation history and the users next question,rephrase the question to be a stand alone question.
+If the conversation is irrelevant or empty, just restate the original question.
+Do not add more details than necessary to the question.
+
+chat history: 
+{% for item in chat_history %} 
+user: 
+{{ item.inputs.question }} 
+assistant: 
+{{ item.outputs.output }} 
+{% endfor %}
+
+Follow up Input: {{ question }} 
+Standalone Question:

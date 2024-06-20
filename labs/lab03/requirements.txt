@@ -1,0 +1,4 @@
+promptflow
+promptflow-tools
+promptflow-devkit
+ipykernel==6.29.4
